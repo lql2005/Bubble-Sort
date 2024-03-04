@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        int [] arrray={38,65,3,17,2};
+        for(int i=0;i<arrray.length-1;i++){    //i表示循环次数
+            for(int j=0;j<arrray.length-1-i;j++){//j表示一次内的排序
+                if(arrray[j]<arrray[j+1]){
+                    int temp=arrray[j];
+                    arrray[j]=arrray[j+1];
+                    arrray[j+1]=temp;
+                }
+
+            }
+
+        }
+        for(int k=0;k<arrray.length;k++){
+            System.out.println(arrray[k]);
+
+
+    }
+}
+}
